@@ -1,0 +1,7 @@
+<story path="org/youbim/pages/log_in_page/as_a_user_i_want_to_log_in.story" title="">
+<scenario keyword="Scenario:" title="scenario description">
+<step outcome="successful">Given I am in the log in page</step>
+<step outcome="successful">Then I login</step>
+<step outcome="failed" keyword="FAILED">Then I should see the home page<failure>java.lang.AssertionError</failure></step>
+</scenario>
+</story>

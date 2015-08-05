@@ -2,30 +2,32 @@ package org.youbim.steps;
 
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
-import org.jbehave.core.annotations.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.youbim.Steps;
+import org.junit.Assert;
+import org.youbim.BasePage;
+import org.youbim.pages.LogInPage;
 
-public class LogInSteps extends Steps {
+public class LogInSteps {
+    private LogInPage page;
 
-    @Given("I navigate to dev.youbim.com")
-    public void navigate() {
-        driver.get("http://dev.youbim.com");
+    public LogInSteps(LogInPage page) {
+        this.page = page;
+    }
+
+    @Given("I am in the log in page")
+    public void navigateToLogInPage () {
+        page.navigate ();
     }
 
     @Then("I login")
-    public void verify() {
-        driver.findElement(By.id("username")).sendKeys("demouser");
-        driver.findElement(By.id("password")).sendKeys("123456");
-        driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/div/form/button")).click();
+    public void logIn () {
+        page.typeUsername("demouser");
+        page.typePassword("123456");
+        page.submit();
     }
 
     @Then("I should see the home page")
     public void iShouldSeeTheHomePage () {
-        driver.findElement(By.className("logged-in")).isDisplayed();
-        driver.quit();
+        Assert.assertTrue(page.assertPage(page.HOME_PAGE));
     }
 
 }

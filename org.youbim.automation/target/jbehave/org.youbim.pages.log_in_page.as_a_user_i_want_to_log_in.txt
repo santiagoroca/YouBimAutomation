@@ -1,0 +1,9 @@
+
+(org/youbim/pages/log_in_page/as_a_user_i_want_to_log_in.story)
+Scenario: scenario description
+Given I am in the log in page
+Then I login
+Then I should see the home page (FAILED)
+(java.lang.AssertionError)
+
+
