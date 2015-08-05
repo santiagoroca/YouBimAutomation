@@ -1,0 +1,4 @@
+<story path="org/youbim/stories/as_a_user_i_want_to_got_to_viewer_2d.story" title="">
+<givenStories keyword="GivenStories:">
+<givenStory parameters="">as_a_user_i_want_to_log_in.story</givenStory>
+</givenStories>

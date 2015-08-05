@@ -1,0 +1,10 @@
+<story path="org/youbim/stories/as_a_user_i_want_to_log_in.story" title="">
+<scenario keyword="Scenario:" title="scenario description">
+<step outcome="failed" keyword="FAILED">Given I navigate to dev.youbim.com<failure>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a6c4449dc285928ba024779344f5423c58&apos;, time: &apos;2014-03-27 11:29:39&apos;
+System info: host: &apos;santiiiii&apos;, ip: &apos;192.168.0.14&apos;, os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: driver.version: RemoteWebDriver</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then I login</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then I should see the home page</step>
+</scenario>
+</story>

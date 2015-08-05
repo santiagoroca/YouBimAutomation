@@ -1,0 +1,9 @@
+
+(org/youbim/stories/home_stories.story)
+Scenario: scenario description
+Given I am in FF
+Given I navigate to dev.youbim.com
+Then I login
+Then I should see the home page
+
+

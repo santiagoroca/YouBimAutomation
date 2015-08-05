@@ -1,0 +1,8 @@
+<story path="org/youbim/stories/home_stories.story" title="">
+<scenario keyword="Scenario:" title="scenario description">
+<step outcome="successful">Given I am in FF</step>
+<step outcome="successful">Given I navigate to dev.youbim.com</step>
+<step outcome="successful">Then I login</step>
+<step outcome="successful">Then I should see the home page</step>
+</scenario>
+</story>
